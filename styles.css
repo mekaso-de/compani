@@ -1,0 +1,67 @@
+@charset "UTF-8";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+@import url("https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css");
+@import url("https://cdn.jsdelivr.net/gh/loadingio/transition.css@v2.0.0/dist/transition.min.css");
+@import url("https://cdn.jsdelivr.net/gh/codrops/PageTransitions/css/animations.css");
+
+@-webkit-keyframes compani-grow {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+@keyframes compani-grow {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+.compani-grow {
+  -webkit-animation-name: compani-grow;
+  animation-name: compani-grow;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes compani-shrink {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.8);
+  }
+}
+@keyframes compani-shrink {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.8);
+  }
+}
+.compani-shrink {
+  -webkit-animation-name: compani-shrink;
+  animation-name: compani-shrink;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.compani-transitions {
+    transition:all 0.3s ease;
+}
+.compani-growOnHover:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+.compani-shrinkOnHover:hover {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+}
